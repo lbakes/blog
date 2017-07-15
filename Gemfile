@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'actionpack-action_caching'
+gem 'rails_12factor', group: :production
 
 gem 'pg', '~> 0.20'
 
