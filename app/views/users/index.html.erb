@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-sm-9">
+    <h1>Clean Users</h1>
+  </div>
+  <div class="col-sm-3">
+    <%= link_to 'Home', welcome_index_path, class: 'Ghome'%>
+    <%= link_to 'Login', new_user_path, class: 'Glogin'%>
+  </div>
+</div>
+
+  <body>
+    <% @users.each do |user| %>
+
+    <div>
+      <div class="name">
+        <th>Name: </th>
+      </div>
+      <div class="user_name">
+        <%= user.name %>
+      </div>
+    </div>
+
+    <div class="line">
+      <div class="email">
+        <th>Email: </th>
+      </div>
+      <div class="user_email">
+        <%= user.email %>
+      </div>
+    </div>
+
+
+    <div class="line">
+      <div class="login">
+        <th class="first">Login: </th>
+      </div>
+      <div class="user_login">
+        <%= user.login %>
+      </div>
+    </div>
+
+    <div class="SED-links">
+        <%= link_to 'Show', user, class: 'Gshow'%>
+        <%= link_to 'Edit', edit_user_path(user), class: 'Gedit'%>
+        <%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' }, class:'Gdestroy' %>
+    </div>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path, class: "Guser" %>

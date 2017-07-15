@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-sm-9">
+    <h1>Clean Login</h1>
+  </div>
+  <div class="col-sm-3">
+    <%= link_to 'Home', welcome_index_path, class: 'Ghome'%>
+    <%= link_to 'Login', users_path, class: 'Glogin'%>
+  </div>
+</div>
+
+<%= render 'form', user: @user %>
+
+<%= link_to 'Users', users_path, class: "users"%>

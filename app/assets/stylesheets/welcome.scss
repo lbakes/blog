@@ -1,0 +1,27 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.welcome {
+  background: url(clean-living.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title{
+  color: white;
+  font-size: 70pt;
+  text-align: left;
+}
+
+a{
+  text-align: left;
+  padding: 0 15px 0 15px;
+  font-size: 12pt;
+}
+.blog:hover{
+  text-decoration: none;
+  list-style-type: none;
+}

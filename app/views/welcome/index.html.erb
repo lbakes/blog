@@ -1,0 +1,26 @@
+<head>
+
+</head>
+
+<body class="welcome">
+<div class="container fluid">
+  <div class="row">
+    <div>
+      <h1 class="title">Clean Spaces</h1>
+    </div>
+  </div>
+</div>
+
+<div onload="autorun()" class="container fluid">
+  <div class="row">
+    <div class="links">
+      <div class="Wblogs">
+        <%= link_to 'Go to Clean Blog', controller: 'articles', class: "blog" %>
+      </div>
+      <div class="Wlogin">
+        <%= link_to 'Go to Clean Login', new_user_path %>
+      </div>
+  </div>
+</div>
+
+</body>
